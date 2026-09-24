@@ -11,7 +11,8 @@ da **exactamente** el mismo resultado que el backend en Laravel. Incluye reglas
 listas para formularios de Vue (Vuetify, Quasar y VeeValidate).
 
 [![ci](https://github.com/Aeunius/peru-rules-js/actions/workflows/ci.yml/badge.svg)](https://github.com/Aeunius/peru-rules-js/actions/workflows/ci.yml)
-[![Licencia](https://img.shields.io/github/license/Aeunius/peru-rules-js.svg)](LICENSE.md)
+[![Versión en npm](https://img.shields.io/npm/v/@aeunius/peru-rules.svg)](https://www.npmjs.com/package/@aeunius/peru-rules)
+[![Licencia](https://img.shields.io/npm/l/@aeunius/peru-rules.svg)](LICENSE.md)
 
 ## Qué valida
 
@@ -218,8 +219,12 @@ make fixtures   # vuelve a descargar los casos compartidos
 make help       # todos los comandos
 ```
 
-Para usar casos nuevos de `laravel-peru-rules`, cambia `ETIQUETA` en
-[`scripts/fixtures.mjs`](scripts/fixtures.mjs) y corre `make fixtures`.
+Para cambiar una regla: se cambian primero los casos en `laravel-peru-rules`, se
+publica un tag, y aquí se cambia `ETIQUETA` en
+[`scripts/fixtures.mjs`](scripts/fixtures.mjs), se corre `make fixtures` y se
+ajusta el código hasta que pasen los tests.
+
+Cada release de GitHub publica la versión en npm, con *provenance*.
 
 El CI prueba con Node 22 y 24.
 

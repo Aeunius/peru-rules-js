@@ -7,6 +7,10 @@ proyecto usa [versionado semántico](https://semver.org/lang/es/).
 
 ## [Sin publicar]
 
+## [1.0.0] - 2026-09-23
+
+Primera versión, con los mismos resultados que `aeunius/laravel-peru-rules` 1.0.2.
+
 ### Agregado
 
 - `ruc`: `esValido()` con filtro de prefijos, `digitoVerificador()`,
@@ -22,4 +26,5 @@ proyecto usa [versionado semántico](https://semver.org/lang/es/).
   VeeValidate, y mensajes en español que se pueden reemplazar.
 - Los mismos casos de prueba que `laravel-peru-rules` v1.0.2.
 
-[Sin publicar]: https://github.com/Aeunius/peru-rules-js/commits/main
+[Sin publicar]: https://github.com/Aeunius/peru-rules-js/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/Aeunius/peru-rules-js/releases/tag/v1.0.0
