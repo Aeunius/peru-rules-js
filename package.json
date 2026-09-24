@@ -1,0 +1,78 @@
+{
+  "name": "@aeunius/peru-rules",
+  "version": "0.0.0",
+  "description": "Validación de documentos y datos peruanos en JavaScript: RUC, DNI, carné de extranjería, pasaporte, celular, placa vehicular y CCI, con reglas para formularios de Vue.",
+  "keywords": [
+    "peru",
+    "validacion",
+    "validation",
+    "ruc",
+    "dni",
+    "cci",
+    "sunat",
+    "vue"
+  ],
+  "homepage": "https://github.com/Aeunius/peru-rules-js#readme",
+  "bugs": "https://github.com/Aeunius/peru-rules-js/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aeunius/peru-rules-js.git"
+  },
+  "license": "MIT",
+  "author": "Alejandro Gonzales Sarmiento (https://github.com/Aeunius)",
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./vue": {
+      "import": "./dist/vue/index.js",
+      "require": "./dist/vue/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.cts",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsdown",
+    "test": "vitest run",
+    "lint": "biome check && tsc --noEmit",
+    "format": "biome check --write",
+    "check": "npm run build && publint --strict && attw --pack --profile node16",
+    "fixtures": "node scripts/fixtures.mjs",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "vue": "^3.3.0"
+  },
+  "peerDependenciesMeta": {
+    "vue": {
+      "optional": true
+    }
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "devDependencies": {
+    "@arethetypeswrong/cli": "^0.18.5",
+    "@biomejs/biome": "^2.5.14",
+    "@types/node": "^22.20.4",
+    "@vue/test-utils": "^2.5.1",
+    "happy-dom": "^20.14.5",
+    "publint": "^0.3.24",
+    "tsdown": "^0.23.0",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.1",
+    "vue": "^3.5.43"
+  }
+}
