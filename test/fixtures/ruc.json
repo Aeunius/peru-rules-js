@@ -1,0 +1,43 @@
+{
+  "juridicos": {
+    "SUNAT": "20131312955",
+    "MEF": "20131370645",
+    "RENIEC": "20295613620",
+    "SUNARP": "20267073580",
+    "ONPE": "20291973851",
+    "BCRP": "20122476309",
+    "Banco de la Nación": "20100030595",
+    "UNMSM": "20148092282",
+    "UNALM": "20147897406",
+    "PUCP": "20155945860",
+    "BCP": "20100047218",
+    "BBVA Perú": "20100130204",
+    "Interbank": "20100053455",
+    "Scotiabank Perú": "20100043140",
+    "Alicorp": "20100055237",
+    "Backus": "20100113610"
+  },
+  "naturales": {
+    "DNI 12345678": "10123456781",
+    "r = 10 → dígito 0": "10100000020",
+    "r = 11 → dígito 1": "10100000071"
+  },
+  "especiales": {
+    "prefijo 15": "15123456782",
+    "prefijo 16": "16123456789",
+    "prefijo 17": "17123456785"
+  },
+  "invalidos": {
+    "dígito verificador errado": "20131312956",
+    "dígitos transpuestos": "20131321955",
+    "prefijo inexistente 30": "30131312955",
+    "prefijo inexistente 11": "11123456789",
+    "10 dígitos": "2013131295",
+    "12 dígitos": "201313129550",
+    "con guiones": "20-13131295-5",
+    "con espacios": " 20131312955 ",
+    "con letras": "2013131295A",
+    "ceros": "00000000000",
+    "salto de línea al final": "20131312955\n"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "validos": {
+    "con guion": ["ABC-123", "ABC-123"],
+    "sin guion": ["ABC123", "ABC-123"],
+    "con dígito en el medio": ["A1B-234", "A1B-234"],
+    "dos dígitos": ["F55-597", "F55-597"],
+    "minúsculas": ["abc-123", "ABC-123"],
+    "con espacios alrededor": [" ABC-123 ", "ABC-123"],
+    "Estado": ["EGA-123", "EGA-123"],
+    "Estado con e minúscula": ["eGA-123", "EGA-123"],
+    "Estado con la E separada": ["E GA-123", "EGA-123"],
+    "Estado con e separada y sin guion": ["e GA123", "EGA-123"],
+    "policía": ["E PA-123", "EPA-123"],
+    "diplomática": ["E CD-123", "ECD-123"],
+    "moto: dígitos y dos letras": ["2171-AY", "2171-AY"],
+    "moto: dígitos, dígito y letra": ["5040-6C", "5040-6C"],
+    "moto: dígitos y letra, dígito": ["1234-A1", "1234-A1"],
+    "moto: sin guion": ["2171ay", "2171-AY"],
+    "moto: letra, dígito y dígitos": ["C5-4481", "C5-4481"],
+    "moto: dos letras y dígitos": ["ab-1234", "AB-1234"],
+    "Estado con tabulación tras la E": ["E\tGA-123", "EGA-123"]
+  },
+  "invalidos": {
+    "empieza con dígito": "1BC-123",
+    "solo dígitos": "123-456",
+    "letras al final": "ABC-12D",
+    "dos caracteres": "AB-123",
+    "cuatro dígitos": "ABC-1234",
+    "con espacio en medio": "ABC 123",
+    "dos guiones": "ABC--123",
+    "con ñ": "ÑBC-123",
+    "espacio tras otra letra": "A BC-123",
+    "dos espacios tras la E": "E  GA-123",
+    "E separada de un dígito": "E G1-123",
+    "moto: sin letras": "2171-56",
+    "moto: tres caracteres al final": "2171-AYZ",
+    "moto: cinco dígitos": "21712-AY",
+    "moto: dos dígitos al inicio": "12-4481",
+    "con ß": "ßC-123",
+    "espacio no separable alrededor": "\u00a0ABC-123",
+    "espacio no separable tras la E": "E\u00a0GA-123"
+  }
+}

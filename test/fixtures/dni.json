@@ -1,0 +1,16 @@
+{
+  "validos": {
+    "ocho dígitos": "12345678",
+    "ceros a la izquierda": "00123456",
+    "nueves": "99999999"
+  },
+  "invalidos": {
+    "7 dígitos": "1234567",
+    "9 dígitos": "123456789",
+    "con letra": "1234567A",
+    "con dígito verificador": "12345678-9",
+    "con espacios": " 12345678",
+    "vacío": "",
+    "salto de línea al final": "12345678\n"
+  }
+}
